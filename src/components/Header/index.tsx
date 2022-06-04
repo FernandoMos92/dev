@@ -1,0 +1,27 @@
+import styles from "./styles.module.scss";
+import Link from "next/link";
+
+import { SignInButton } from "../SignInButton";
+
+export function Header() {
+  return (
+    <header className={styles.headerContainer}>
+      <div className={styles.headerContent}>
+        <Link href="/">
+          <img src="/images/logo.svg" alt="Logo meu board" />
+        </Link>
+
+        <nav>
+          <Link href="/" passHref>
+            <a>Home</a>
+          </Link>
+          <Link href="/board" passHref>
+            <a>Meu board</a>
+          </Link>
+        </nav>
+
+        <SignInButton />
+      </div>
+    </header>
+  );
+}
