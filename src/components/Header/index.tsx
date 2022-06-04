@@ -12,10 +12,10 @@ export function Header() {
         </Link>
 
         <nav>
-          <Link href="/">
+          <Link href="/" passHref>
             <a>Home</a>
           </Link>
-          <Link href="/board">
+          <Link href="/board" passHref>
             <a>Meu board</a>
           </Link>
         </nav>
